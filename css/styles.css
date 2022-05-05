@@ -724,7 +724,6 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
     min-width: 200px;
     min-height: 50px;
     padding: 0;
@@ -939,6 +938,7 @@ address {
     position: absolute;
     width: 528px;
     min-height: 581px;
+    padding: 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -962,16 +962,31 @@ address {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #FFFFFF;
-    fill: #000000;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1));
+    -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1));
+    -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1));
+    -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon{
     fill: var(--accent-color);
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+}
+
+.modal-close-btn-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: #000000;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
