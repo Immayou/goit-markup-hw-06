@@ -258,7 +258,10 @@ img {
 }
 
 .hero-btn,
-.examples-btn-item {
+.examples-btn-item,
+.modal-button,
+.modal-close-btn,
+.footer-mailing-button {
     cursor: pointer;
 }
 
