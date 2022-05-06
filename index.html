@@ -367,7 +367,7 @@
                 <form>
                     <p class="footer-mailing-title">Подпишитесь на рассылку</p>
                     <div class="footer-mailing-actions">
-                        <input type="email" id="email" name="email" placeholder="E-mail">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="E-mail">
                         <button type="submit" class="footer-mailing-button"><span class="button-name">Подписаться</span>
                             <svg class="footer-mailing-icon" width="24" height="24">
                                 <use href="./css/icons/symbol-defs.svg#icon-icon-send"></use>
@@ -385,7 +385,7 @@
                     <use href="./css/icons/symbol-defs.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <h2 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h2>
+            <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
             <label for="username" class="modal-label">Имя</label>
             <div class="modal-input-content">
             <input type="text" name="username" id="username" class="modal-input" minlength="2" required autofocus>
@@ -409,6 +409,10 @@
             </div>
             <label for="text-area" class="modal-text-area-label">Комментарий</label>
             <textarea name="text-area" id="text-area" class="modal-text-area" placeholder="Введите текст"></textarea>
+            <div class="check-content">
+            <input type="checkbox" class="input-check" id="input-check" name="policy" value="policy">
+            <label for="input-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+            </div>
             <button type="submit" class="modal-button"><span class="modal-button-name">Отправить</span>
             </button>
         </div>
