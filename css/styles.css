@@ -1062,7 +1062,10 @@ address {
 
 .modal-input-content {
     position: relative;
-    margin-bottom: 10px;
+}
+
+.modal-field {
+    margin-bottom: 10px; 
 }
 
 .modal-icon {
