@@ -1113,6 +1113,9 @@ address {
 }
 
 .check-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 1.71;
     color: var(--modal-secondary-text-color);
@@ -1122,22 +1125,20 @@ address {
     color: var(--accent-color);
 }
 
-.check-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input-check:checked + .check-area>.modal-check-icon {
+.input-check:checked + .check-text>.modal-check-icon {
     background-color: var(--accent-color);
     border-color: transparent;
     fill: #FFFFFF;
 }
 
+.input-check:focus +.check-text>.modal-check-icon {
+    border-color: var(--accent-color);
+}
+
 .modal-check-icon {
     width: 16px;
     height: 15px;
-    margin-right: 8px;
+    margin-right: 7px;
     border: 2px solid #000000;
     fill: #FFFFFF;
     border-radius: 3px;
