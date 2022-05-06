@@ -409,10 +409,15 @@
             </div>
             <label for="text-area" class="modal-text-area-label">Комментарий</label>
             <textarea name="text-area" id="text-area" class="modal-text-area" placeholder="Введите текст"></textarea>
-            <div class="check-content">
-            <input type="checkbox" class="input-check" id="input-check" name="policy" value="policy">
+        <div class="check-content">
+            <input type="checkbox" class="input-check hidden" id="input-check" name="policy" value="policy">
+        <div class="check-area">
+            <svg class="modal-check-icon" width="11" height="8">
+                <use href="./css/icons/symbol-defs.svg#icon-check"></use>
+            </svg>
             <label for="input-check" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-            </div>
+        </div>
+        </div>
             <button type="submit" class="modal-button"><span class="modal-button-name">Отправить</span>
             </button>
         </div>
