@@ -956,8 +956,9 @@ address {
 
 .modal-close-btn {
     position: absolute;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 8px;
     right: 8px;
     width: 30px;
@@ -974,13 +975,16 @@ address {
 }
 
 .modal-close-btn-icon {
-     fill: #000000; 
-     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 11px;
+    height: 11px;
+    fill: #000000; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon{
     fill: var(--accent-color);
