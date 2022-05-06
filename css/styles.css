@@ -710,6 +710,7 @@ address {
    
     display: flex;
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.03em;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -718,6 +719,20 @@ address {
     outline: none;
     color: var(--footer-main-text-color);
     background-color: var(--footer-background-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-mailing-actions>.form-input:hover,
+.footer-mailing-actions>.form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.footer-mailing-actions>.form-input:valid:not(:placeholder-shown) {
+    background-color: rgba(0, 100, 0, 0.2);
+}
+
+.footer-mailing-actions>.form-input:invalid:not(:placeholder-shown) {
+    background-color: rgba(100, 0, 0, 0.2);
 }
 
 .footer-mailing-button {
@@ -1041,9 +1056,6 @@ address {
 
 .modal-icon {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 18px;
     height: 18px;
     left: 12px;
